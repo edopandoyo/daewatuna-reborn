@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <title>Daewatuna Logo</title>
+  <defs>
+    <style>
+      .stroke { stroke: #0B0B0B; stroke-width: 16; fill: none; stroke-linejoin: round; stroke-linecap: round; }
+      .fill   { fill: #0B0B0B; }
+      .word   { font-family: 'Times New Roman', Georgia, serif; font-size: 72px; font-weight: 700; letter-spacing: 3px; }
+    </style>
+  </defs>
+
+  <!-- Mark (Rub el Hizb style: two squares) -->
+  <g id="mark" transform="translate(400,210)">
+    <!-- outer squares to form an 8-point star outline -->
+    <rect x="-95" y="-95" width="190" height="190" rx="10" ry="10" class="stroke"/>
+    <rect x="-95" y="-95" width="190" height="190" rx="10" ry="10" transform="rotate(45)" class="stroke"/>
+    
+    <!-- Inner monogram: abstract calligraphic 'alif' inside a rounded arch -->
+    <!-- Arch outline -->
+    <path class="stroke" d="M0,-68
+                             C35,-68 68,-35 68,0
+                             L68,76
+                             C68,92 56,104 40,104
+                             L-40,104
+                             C-56,104 -68,92 -68,76
+                             L-68,0
+                             C-68,-35 -35,-68 0,-68 Z"/>
+    <!-- Alif (vertical bar) -->
+    <path class="fill" d="M-6,-40 L6,-40 L6,72 C6,86 -6,98 -20,98 L-20,86 C-12,86 -6,80 -6,72 Z"/>
+    <!-- Dot (diamond) -->
+    <rect x="-6" y="-14" width="12" height="12" transform="rotate(45)" class="fill"/>
+  </g>
+
+  <!-- Wordmark -->
+  <text id="wordmark" x="400" y="460" text-anchor="middle" class="fill word">DAEWATUNA</text>
+</svg>
