@@ -15,7 +15,7 @@ const images = [
 
 export default function ImageSlideShow() {
   return (
-    <div className="w-full h-screen fixed inset-0 z-0 overflow-hidden">
+    <div className="w-full h-screen fixed inset-0 z-0 overflow-hidden max-w-lg mx-auto">
       <Fade
         duration={2000} // Durasi tiap slide (ms)
         transitionDuration={1000} // Durasi transisi antar slide
